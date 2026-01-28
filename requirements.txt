@@ -1,0 +1,20 @@
+# Data Manipulation and Analysis
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine Learning and Preprocessing
+scikit-learn
+joblib
+
+# Deep Learning Framework
+tensorflow
+
+# MLOps and Experiment Tracking
+mlflow
+
+# Web Application and Deployment
+streamlit
