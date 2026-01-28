@@ -106,3 +106,62 @@ The model was evaluated on a held-out test set (last 15% of the timeline), achie
     ```
 
 ---
+## 📂 Project Structure
+
+```text
+├── .vscode/
+│   └── settings.json
+│
+├── dataset/
+│   └── dataset.csv                 # Original CO₂ emissions dataset
+│
+├── docs/
+│   └── CO2 Emissions LSTM.pdf       # Detailed project report
+│
+├── flags/                          # Country flags used in dashboard
+│   ├── Flag-China.webp
+│   ├── Flag_of_Brazil.svg.png
+│   ├── Flag_of_France.svg
+│   ├── Flag_of_Germany.svg.png
+│   ├── Flag_of_India.svg.webp
+│   ├── Flag_of_Italy.svg.webp
+│   ├── Flag_of_Japan.svg.webp
+│   ├── Flag_of_Russia.svg
+│   ├── Flag_of_Spain.svg
+│   ├── Flag_of_the_United_Kingdom.svg
+│   ├── Flag_of_the_United_States.svg
+│   └── Flag-map_of_the_world_(2018).png
+│
+├── mlruns/                         # MLflow experiment tracking
+│   ├── 0/
+│   ├── <experiment_id>/
+│   │   ├── <run_id>/
+│   │   │   ├── artifacts/
+│   │   │   │   ├── pred_vs_true.png
+│   │   │   │   └── model/
+│   │   │   │       └── model.keras
+│   │   │   ├── metrics/
+│   │   │   ├── params/
+│   │   │   └── tags/
+│   │   └── ...
+│   └── .trash/
+│
+├── models/                         # Saved trained models & scalers
+│   ├── lstm_model.keras
+│   ├── scaler_X.pkl
+│   ├── scaler_y.pkl
+│   ├── label_encoder_country.pkl
+│   ├── X_test.npy
+│   └── y_test.npy
+│
+├── notebooks/
+│   └── Co2Emission.ipynb            # EDA & model experimentation
+│
+├── app.py                          # Streamlit application
+├── Mlflow.py                       # MLflow training & logging script
+├── pivot_df.csv                    # Processed pivot dataset
+├── requirements.txt                # Python dependencies
+├── carbon-dioxide-emissions-featured.jpg
+├── pred_vs_true.png
+├── pred_vs_true_sectors_subplot.png
+└── README.md                       # Project documentation
