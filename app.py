@@ -7,10 +7,10 @@ import streamlit as st
 pivot_df = pd.read_csv('pivot_df.csv')
 pivot_df["date"] = pd.to_datetime(pivot_df["date"]) 
 
-model = load_model('lstm_model.keras')
-x_scaler = joblib.load('scaler_X.pkl')
-y_scaler = joblib.load('scaler_y.pkl')
-le_country = joblib.load("label_encoder_country.pkl")
+model = load_model('models/lstm_model.keras')
+x_scaler = joblib.load('models/scaler_X.pkl')
+y_scaler = joblib.load('models/scaler_y.pkl')
+le_country = joblib.load("models/label_encoder_country.pkl")
 TIME_STEPS = 12
 MAX_FORECAST_DAYS = 7
 

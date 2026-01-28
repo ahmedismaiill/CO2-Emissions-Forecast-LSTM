@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Ahmed/Study/Four%20Year%20First/Machine%20Learning/CO2%20Emissions%20LSTM/mlruns/810667125083586955/96dd0e886e134e4fb8d5b80adecf6fba/artifacts
+end_time: 1769633235313
+entry_point_name: ''
+experiment_id: '810667125083586955'
+lifecycle_stage: active
+run_id: 96dd0e886e134e4fb8d5b80adecf6fba
+run_name: Evaluate_Test_Data
+run_uuid: 96dd0e886e134e4fb8d5b80adecf6fba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769633224400
+status: 3
+tags: []
+user_id: Ahmed

@@ -9,13 +9,13 @@ import matplotlib.pyplot as plt
 # ----------------------------
 # 1. Load your test data
 # ----------------------------
-X_test = np.load("X_test.npy")  
-y_test = np.load("y_test.npy")  
+X_test = np.load("models/X_test.npy")  
+y_test = np.load("models/y_test.npy")  
 
 # ----------------------------
 # 2. Load the trained model
 # ----------------------------
-model_path = "lstm_model.keras"
+model_path = "models/lstm_model.keras"
 model = load_model(model_path)
 
 # ----------------------------
